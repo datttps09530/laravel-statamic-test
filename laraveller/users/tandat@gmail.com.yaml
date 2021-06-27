@@ -1,5 +1,6 @@
-name: dat
+name: 'Tấn Đạt'
 super: true
+avatar: IMG_0983.JPG
 id: 8fc1c2ff-8934-4a56-b54d-1d59239fe54c
 password_hash: $2y$10$lp59begCZqmXFfJeiMgWTe0p/6BV9HQ5QvD10NsvetY8ZTrz5R9Xy
 preferences:

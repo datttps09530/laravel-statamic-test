@@ -1,0 +1,11 @@
+{{ search:results index="posts" }}
+{{ if no_results }}
+<h2>No results found for {{ get:q }}.</h2>
+{{ else }}
+<div class="container my-12 mx-auto px-4 md:px-12">
+    <div class="flex flex-wrap -mx-1 lg:-mx-4">
+        {{partial:posts/card}}
+    </div>
+</div>
+{{ /if }}
+{{ /search:results }}

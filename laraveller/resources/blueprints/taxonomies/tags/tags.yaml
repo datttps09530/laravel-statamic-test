@@ -1,4 +1,4 @@
-title: Pages
+title: Tags
 sections:
   main:
     display: Main
@@ -14,22 +14,15 @@ sections:
         handle: content
         field:
           type: markdown
-          display: Content
           localizable: true
-      -
-        handle: author
-        field:
-          type: users
-          display: Author
-          default: current
-          localizable: true
-          max_items: 1
       -
         handle: template
         field:
-          type: template
+          hide_partials: true
           display: Template
-          localizable: true
+          type: template
+          icon: template
+          listable: hidden
   sidebar:
     display: Sidebar
     fields:
@@ -38,15 +31,5 @@ sections:
         field:
           type: slug
           required: true
-          localizable: true
           validate:
             - required
-      -
-        handle: parent
-        field:
-          type: entries
-          collections:
-            - pages
-          max_items: 1
-          listable: false
-          localizable: true
